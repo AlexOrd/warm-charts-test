@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Airplay</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/nav--side/side_nav.css">
+    <link rel="stylesheet" href="styles/header/header.css">
+    <link rel="stylesheet" href="styles/main_nav/main_nav.css">
+    <link rel="stylesheet" href="styles/main_filter/main_filter.css">
+    <link rel="stylesheet" href="styles/main_body/main_body.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="wrapper_nav--side">
+            <div class="side_holder">
+                <div class="side_header">
+                    <div class="side_title">Soundcharts</div>
+                    <div class="side_search">
+                        <div class="search_icon"></div>
+                        <input type="search" placeholder="search" class="search">
+                    </div>
+                </div>
+                <div class="side_options">
+                    <div class="options_title">Market Intelligence</div>
+                    <a href="index.html">
+                        <div class="option">
+                            <div class="option_icon charts_icon"></div>
+                            <div class="option_name">Charts</div>
+                        </div>
+                    </a>
+                    <a href="airplay.html">
+                        <div class="option selected">
+                            <div class="option_icon airplay_icon"></div>
+                            <div class="option_name">Airplay</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="option">
+                            <div class="option_icon compare_icon"></div>
+                            <div class="option_name">Compare Artists</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="side_artists">
+                    <div class="artists_title">Artists</div>
+                    <div class="artists_icon"></div>
+                    <div class="artists_empty">No artists in your favorites. Start starring artists to find them here.</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_main">
+            <div class="header">
+                <div class="header_btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h1 class="header_title">Airplay</h1>
+                <p class="header_subtitle">Weekly and daily radio charts</p>
+            </div>
+            <div class="main_nav">
+                <div class="nav_holder">
+                    <div class="option_block">
+                        <span>Countries</span>
+                        <select name="countries" class="selection">
+                            <option value="us">United States</option>
+                            <option value="item">Item</option>
+                            <option value="item">Item</option>
+                            <option value="item">Item</option>
+                            <option value="item">Item</option>
+                        </select>
+                    </div>
+                    
+                    <div class="option_block">
+                        <span>Radios</span>
+                        <div class="selection select_custom">
+                            <p class="current_selection">Ascendance Radio</p>
+                            <div class="list_holder">
+                                <div class="options_list">
+                                    <div class="search_holder">
+                                        <div class="list_search--icon"></div>
+                                        <input type="search" name="search" placeholder="Search" class="list_search--input">
+                                    </div>
+                                    <div class="options_holder">
+                                        <div class="list_item">Ascendance Radio</div>
+                                        <div class="list_item">CIDR</div>
+                                        <div class="list_item">ENERGY98</div>
+                                        <div class="list_item">Frisky Radio</div>
+                                        <div class="list_item">KAFA</div>
+                                        <div class="list_item">KALX</div>
+                                        <div class="list_item">KAMP</div>
+                                        <div class="list_item">Item</div>
+                                        <div class="list_item">Item</div>
+                                        <div class="list_item">Item</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="song_album custom">
+                    <div class="song_side">Song</div>
+                    <div class="album_side">Album</div>
+                </div>
+                <div class="option_block custom">
+                    <select name="period" class="selection">
+                        <option value="us">Last 7 days</option>
+                        <option value="item">Item</option>
+                        <option value="item">Item</option>
+                        <option value="item">Item</option>
+                        <option value="item">Item</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="main_body">
+                <div class="body_holder">
+                    
+                    <div class="rank_column">
+                        <div class="rank-title">
+                            Rank
+                            <div class="rank_arrow"></div>
+                        </div>
+                        <div class="itmes_holder block_1">
+                            <div class="rank_item">1</div>
+                            <div class="rank_item">2</div>
+                            <div class="rank_item">3</div>
+                            <div class="rank_item">4</div>
+                            <div class="rank_item">5</div>
+                            <div class="rank_item">6</div>
+                            <div class="rank_item">7</div>
+                            <div class="rank_item">8</div>
+                            <div class="rank_item">9</div>
+                            <div class="rank_item">10</div>
+                        </div>
+                        
+                    </div>
+                    <div class="song_column custom">
+                        <div class="song_title">Song</div>
+                        <div class="itmes_holder block_2">
+                            <div class="song_item">
+                                <div class="song_icon">
+                                    <div class="icon_img"></div>
+                                </div>
+                                <div class="song_name">
+                                    <div class="name_title">Title #1</div>
+                                    <div class="name_subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="song_item">
+                                <div class="song_icon">
+                                    <div class="icon_img"></div>
+                                </div>
+                                <div class="song_name">
+                                    <div class="name_title">Title #2</div>
+                                    <div class="name_subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="song_item">
+                                <div class="song_icon">
+                                    <div class="icon_img"></div>
+                                </div>
+                                <div class="song_name">
+                                    <div class="name_title">Title #3</div>
+                                    <div class="name_subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="song_item">
+                                <div class="song_icon">
+                                    <div class="icon_img"></div>
+                                </div>
+                                <div class="song_name">
+                                    <div class="name_title">Title #4</div>
+                                    <div class="name_subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="song_item">
+                                <div class="song_icon">
+                                    <div class="icon_img"></div>
+                                </div>
+                                <div class="song_name">
+                                    <div class="name_title">Title #5</div>
+                                    <div class="name_subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="song_item">
+                                <div class="song_icon">
+                                    <div class="icon_img"></div>
+                                </div>
+                                <div class="song_name">
+                                    <div class="name_title">Title #6</div>
+                                    <div class="name_subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="song_item">
+                                <div class="song_icon">
+                                    <div class="icon_img"></div>
+                                </div>
+                                <div class="song_name">
+                                    <div class="name_title">Title #7</div>
+                                    <div class="name_subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="song_item">
+                                <div class="song_icon">
+                                    <div class="icon_img"></div>
+                                </div>
+                                <div class="song_name">
+                                    <div class="name_title">Title #8</div>
+                                    <div class="name_subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="song_item">
+                                <div class="song_icon">
+                                    <div class="icon_img"></div>
+                                </div>
+                                <div class="song_name">
+                                    <div class="name_title">Title #9</div>
+                                    <div class="name_subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                            <div class="song_item">
+                                <div class="song_icon">
+                                    <div class="icon_img"></div>
+                                </div>
+                                <div class="song_name">
+                                    <div class="name_title">Title #10</div>
+                                    <div class="name_subtitle">Subtitle</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plays_column">
+                        <div class="plays_title">Plays</div>
+                        <div class="itmes_holder block_3">
+                            <div class="plays_item">53</div>
+                            <div class="plays_item">55</div>
+                            <div class="plays_item">40</div>
+                            <div class="plays_item">35</div>
+                            <div class="plays_item">66</div>
+                            <div class="plays_item">47</div>
+                            <div class="plays_item">23</div>
+                            <div class="plays_item">57</div>
+                            <div class="plays_item">36</div>
+                            <div class="plays_item">31</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

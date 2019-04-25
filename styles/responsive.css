@@ -1,0 +1,66 @@
+@media screen and (max-width: 1175px) {
+    .main_nav {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    
+    .nav_holder {
+        margin-bottom: 10px;
+    }
+
+    .song_album {
+        margin-left: 33px;
+        margin-bottom: 10px;
+    }
+
+    .option_block.custom {
+        margin-left: 33px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        /* border: 1px solid #fff; */
+    }
+
+    .wrapper_nav--side {
+        left: -240px;
+    }
+
+    .wrapper_main {
+        margin-left: 0;
+    }
+
+    .header_btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_nav {
+        padding-top: 35px;
+    }
+
+   .nav_holder {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   .option_block {
+       margin-bottom: 5px;
+   }   
+
+   .option_block span {
+       width: 70px;
+   }
+}
+
+@media screen and (max-width: 425px) {
+    .song_column {
+        flex-grow: 1;
+    }
+    .label_column {
+        display: none;
+    }
+}

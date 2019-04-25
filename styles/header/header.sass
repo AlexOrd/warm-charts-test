@@ -1,0 +1,69 @@
+/***TEXT-COLORS***/
+$dark_orange: #f08055;
+$light_orange: #ffb394;
+$dark_white: #e9e9e9;
+/***BG-COLORS***/
+$light_dark: #322c37;
+$under_line: #9b5438;
+
+/*********HEADER-MAIN*********/
+
+.header
+    height: 100px
+    background-color: $light_dark
+    padding-left: 20px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    // border: 1px solid #fff
+    &_btn
+        width: 60px
+        height: 60px
+        position: absolute
+        right: 10px
+        top: 10px
+        border-radius: 50%
+        overflow: hidden
+        box-shadow: 0 0 10px 0px #000
+        background-color: $dark_orange
+        display: none
+        transition: 250ms
+    &_btn > div
+        height: 2px
+        width: 30px
+        background-color: #fff
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        transition: 300ms
+    &_btn:hover
+        cursor: pointer
+        background-color: $light_orange
+    &_btn > div:nth-child(1)
+        top: 22px
+    &_btn > div:nth-child(4)
+        top: 38px
+    &_btn.active > div:nth-child(1)
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%) rotate(45deg)
+        transition-delay: 200ms
+    &_btn.active > div:nth-child(4)
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%) rotate(-45deg)
+        transition-delay: 200ms
+    &_btn.active > div:nth-child(2)
+        top: 50%
+        left: -50%
+        transform: translate(-50%, -50%)
+    &_btn.active > div:nth-child(3)
+        top: 50%
+        left: 150%
+        transform: translate(-50%, -50%)
+
+.header_title
+    color: #fff
+.header_subtitle
+    color: $light_orange

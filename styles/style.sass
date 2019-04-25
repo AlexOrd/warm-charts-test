@@ -1,0 +1,109 @@
+
+@font-face
+  font-family: 'MuseoSans'
+  font-weight: 100
+  font-style: normal
+  src: url('assets/MuseoSans_100.otf')
+
+
+@font-face
+  font-family: 'MuseoSans'
+  font-weight: 100
+  font-style: italic
+  src: url('assets/MuseoSans_100_Italic.otf')
+
+
+@font-face
+  font-family: 'MuseoSans'
+  font-weight: 300
+  font-style: normal
+  src: url('assets/MuseoSans_300.otf')
+
+
+@font-face
+  font-family: 'MuseoSans'
+  font-weight: 300
+  font-style: italic
+  src: url('assets/MuseoSans_300_Italic.otf')
+
+
+@font-face
+  font-family: 'MuseoSans'
+  font-weight: 500
+  font-style: normal
+  font-variant: normal
+  src: url('assets/MuseoSans_500.otf') format("opentype")
+
+
+@font-face
+  font-family: 'MuseoSans'
+  font-weight: 500
+  font-style: italic
+  src: url('assets/MuseoSans_500_Italic.otf')
+
+
+@font-face
+  font-family: 'MuseoSans'
+  font-weight: 700
+  font-style: normal
+  src: url('assets/MuseoSans_700.otf')
+
+
+@font-face
+  font-family: 'MuseoSans'
+  font-weight: 700
+  font-style: italic
+  src: url('assets/MuseoSans_700_Italic.otf')
+
+
+@font-face
+  font-family: 'MuseoSans'
+  font-weight: 900
+  font-style: normal
+  src: url('assets/MuseoSans_900.otf')
+
+
+@font-face
+  font-family: 'MuseoSans'
+  font-weight: 900
+  font-style: italic
+  src: url('assets/MuseoSans_900_Italic.otf')
+
+/***TEXT-COLORS***/
+$dark_orange: #f08055;
+$light_orange: #ffb394;
+$dark_white: #e9e9e9;
+/***BG-COLORS***/
+$light_dark: #322c37;
+$under_line: #9b5438;
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+/*********GENERAL*********/
+
+.wrapper
+    //border: 1px solid #fff
+    min-height: 100vh
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    &_nav--side
+        width: 230px !important
+        background-color: $light_dark
+        color: $dark_orange
+        position: fixed
+        height: 100%
+        box-shadow: 0 0 10px 0px #000
+        transition: 300ms
+        overflow: hidden
+        z-index: 1
+    &_nav--side.active
+        left: 0px
+    &_main
+        flex-grow: 1
+        background-color: #0e1523
+        color: #fff
+        margin-left: 230px

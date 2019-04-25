@@ -1,0 +1,145 @@
+/***TEXT-COLORS***/
+$dark_orange: #f08055;
+$light_orange: #ffb394;
+$dark_white: #e9e9e9;
+/***BG-COLORS***/
+$light_dark: #322c37;
+$under_line: #9b5438;
+
+/*********MAIN-NAV*********/
+
+.main_nav
+    width: 100%
+    min-height: 130px
+    // border: 1px solid #fff
+    padding-top: 65px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    
+.nav_holder
+    // border: 1px solid #fff
+    display: flex
+    align-items: center
+.option_block
+    //border: 1px solid red 
+    display: flex
+    align-items: center
+    span
+        margin: 0 10px 0 30px
+    &.custom
+        margin-right: 10px
+.selection
+    height: 30px
+    width: 150px
+    padding-left: 10px
+    background-color: $dark_orange
+    color: #fff
+    background-image: url(../../img/nav/arrow.png)
+    background-size: 15%
+    background-position: 97% 80%
+    background-repeat: no-repeat
+    appearance: none
+    border: none
+    &:hover
+        cursor: pointer
+    &:focus
+        outline: none
+.select_custom
+    border-radius: 5px
+    position: relative
+    .current_selection
+        font-size: 14px
+        line-height: 30px
+.list_holder
+  background-color: #ccc
+  width: 150px
+  height: 250px
+  position: absolute
+  animation: showOptions 500ms forwards
+  z-index: 1
+  border-radius: 5px
+  left: 0
+  top: 35px
+  overflow: hidden
+  display: none
+  &.active
+        display: block
+.options_list
+    width: 167px
+    height: 250px
+    background-color: $dark_orange
+    //position: absolute
+    overflow-y: scroll
+    overflow-x: hidden
+    box-sizing: content-box
+    padding-right: 17px
+    //display: none
+    //border: 1px solid #fff
+    &:hover
+        cursor: default
+.search_holder
+    height: 35px
+    border-bottom: 2px solid $light_orange
+    .list_search--icon
+        height: 100%
+        width: 20%
+        //border: 1px solid #fff
+        float: left
+        background-image: url(../../img/nav/search.png)
+        background-size: 70%
+        background-position: center
+        background-repeat: no-repeat
+        &:hover
+            cursor: pointer
+    .list_search--input
+        width: 80%
+        height: 35px
+        padding: 0 5px
+        color: #fff
+        border: none
+        background-color: rgba(255, 255, 255, 0)
+        &:focus
+            outline: none
+        &::placeholder
+            color: $light_orange
+.list_item
+    height: 35px
+    //border: 1px solid #fff
+    line-height: 35px
+    padding-left: 5px
+    &:hover
+        cursor: pointer
+        background-color: rgba(255, 255, 255, 0.219) 
+
+.song_album
+    width: 170px
+    border-radius: 5px
+    border: 1px solid $dark_orange
+    margin-right: 10px
+    display: flex
+    //position: absolute
+    right: 10px
+    top: 65px
+    div
+        // border: 1px solid yellow
+        width: 85px
+        height: 30px
+        text-align: center
+        line-height: 30px
+        &:hover
+            cursor: pointer
+            background-color: $dark_orange
+            color: #fff
+    .song_side
+        border-right: 1px solid $dark_orange
+
+
+@keyframes showOptions
+    from
+        opacity: 0
+        transform: translateY(10%) scale(0.99)
+    to
+        opacity: 1
+        transform: translateY(0%) scale(1)

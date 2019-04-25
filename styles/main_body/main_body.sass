@@ -1,0 +1,121 @@
+/***TEXT-COLORS***/
+$dark_orange: #f08055;
+$light_orange: #ffb394;
+$dark_white: #e9e9e9;
+/***BG-COLORS***/
+$light_dark: #322c37;
+$under_line: #9b5438;
+
+/*********MAIN-BODY*********/
+
+.body_holder
+    display: flex
+    > div
+        // border: 1px solid #fff
+        min-height: 70px
+.rank_column
+    
+.rank-title
+    text-transform: uppercase
+    line-height: 70px
+    position: relative
+    font-size: 18px
+    padding-left: 10px
+    color: $dark_orange
+    &:hover
+        cursor: pointer
+.rank_arrow
+    width: 20px
+    height: 20px
+    position: absolute
+    top: 50%
+    right: 5px
+    transform: translateY(-40%)
+    background-image: url(../../img/body/ordering.png)
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    transition: 100ms
+    &.active
+        transform: rotate(180deg) translateY(40%)
+.itmes_holder
+    display: flex
+    flex-direction: column
+    // border: 1px solid yellow
+    &.active
+        flex-direction: column-reverse
+    .rank_item
+        width: 100px
+        border-bottom: 2px solid $under_line
+        height: 70px
+        text-align: center
+        line-height: 70px
+        font-size: 20px
+
+.song_column
+    min-width: 250px
+    &.custom
+        width: 100%
+.song_title
+    text-transform: uppercase
+    line-height: 70px
+    position: relative
+    font-size: 18px
+    padding-left: 10px
+    color: $dark_orange
+.song_item
+    border-bottom: 2px solid $under_line
+    min-width: 250px
+    height: 70px
+    display: flex
+    .song_icon
+        width: 70px
+        height: 100%
+        // border: 1px solid #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        .icon_img
+            width: 60px
+            height: 60px
+            // border: 1px solid #fff
+            background-image: url(../../img/body/musician.jpg)
+            background-size: 200%
+            background-repeat: no-repeat
+            background-position: 15% 15%
+    .song_name
+        // border: 1px solid blue
+        padding: 10px
+        height: 70px
+        flex-grow: 1
+        .name_title
+            font-size: 20px
+            margin-bottom: 8px
+        .name_subtitle
+            font-size: 14px
+            color: $light_orange
+
+.label_column,
+.plays_column
+    flex-grow: 1
+.label_title,
+.plays_title
+    text-transform: uppercase
+    line-height: 70px
+    position: relative
+    font-size: 18px
+    padding-left: 10px
+    color: $dark_orange
+.label_item,
+.plays_item
+    border-bottom: 2px solid $under_line
+    height: 70px
+    text-align: left
+    padding-left: 10px
+    line-height: 70px
+    font-size: 20px
+    flex-grow: 1
+    color: $light_orange
+.plays_item
+    text-align: center
+    padding-left: 10px

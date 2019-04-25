@@ -1,0 +1,17 @@
+/***TEXT-COLORS***/
+/***BG-COLORS***/
+/*********MAIN-FILTER*********/
+.main_filter {
+  height: 70px;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.current_filter {
+  font-size: 14px;
+}
+
+.current_filter span {
+  color: #ffb394;
+}
+/*# sourceMappingURL=main_filter.css.map */

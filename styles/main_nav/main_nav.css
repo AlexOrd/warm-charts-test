@@ -1,0 +1,227 @@
+/***TEXT-COLORS***/
+/***BG-COLORS***/
+/*********MAIN-NAV*********/
+.main_nav {
+  width: 100%;
+  min-height: 130px;
+  padding-top: 65px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.option_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.option_block span {
+  margin: 0 10px 0 30px;
+}
+
+.option_block.custom {
+  margin-right: 10px;
+}
+
+.selection {
+  height: 30px;
+  width: 150px;
+  padding-left: 10px;
+  background-color: #f08055;
+  color: #fff;
+  background-image: url(../../img/nav/arrow.png);
+  background-size: 15%;
+  background-position: 97% 80%;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+}
+
+.selection:hover {
+  cursor: pointer;
+}
+
+.selection:focus {
+  outline: none;
+}
+
+.select_custom {
+  border-radius: 5px;
+  position: relative;
+}
+
+.select_custom .current_selection {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.list_holder {
+  background-color: #ccc;
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  -webkit-animation: showOptions 500ms forwards;
+          animation: showOptions 500ms forwards;
+  z-index: 1;
+  border-radius: 5px;
+  left: 0;
+  top: 35px;
+  overflow: hidden;
+  display: none;
+}
+
+.list_holder.active {
+  display: block;
+}
+
+.options_list {
+  width: 167px;
+  height: 250px;
+  background-color: #f08055;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-right: 17px;
+}
+
+.options_list:hover {
+  cursor: default;
+}
+
+.search_holder {
+  height: 35px;
+  border-bottom: 2px solid #ffb394;
+}
+
+.search_holder .list_search--icon {
+  height: 100%;
+  width: 20%;
+  float: left;
+  background-image: url(../../img/nav/search.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search_holder .list_search--icon:hover {
+  cursor: pointer;
+}
+
+.search_holder .list_search--input {
+  width: 80%;
+  height: 35px;
+  padding: 0 5px;
+  color: #fff;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.search_holder .list_search--input:focus {
+  outline: none;
+}
+
+.search_holder .list_search--input::-webkit-input-placeholder {
+  color: #ffb394;
+}
+
+.search_holder .list_search--input:-ms-input-placeholder {
+  color: #ffb394;
+}
+
+.search_holder .list_search--input::-ms-input-placeholder {
+  color: #ffb394;
+}
+
+.search_holder .list_search--input::placeholder {
+  color: #ffb394;
+}
+
+.list_item {
+  height: 35px;
+  line-height: 35px;
+  padding-left: 5px;
+}
+
+.list_item:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.219);
+}
+
+.song_album {
+  width: 170px;
+  border-radius: 5px;
+  border: 1px solid #f08055;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 10px;
+  top: 65px;
+}
+
+.song_album div {
+  width: 85px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.song_album div:hover {
+  cursor: pointer;
+  background-color: #f08055;
+  color: #fff;
+}
+
+.song_album .song_side {
+  border-right: 1px solid #f08055;
+}
+
+@-webkit-keyframes showOptions {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10%) scale(0.99);
+            transform: translateY(10%) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
+  }
+}
+
+@keyframes showOptions {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10%) scale(0.99);
+            transform: translateY(10%) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
+  }
+}
+/*# sourceMappingURL=main_nav.css.map */
